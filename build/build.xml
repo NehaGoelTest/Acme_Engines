@@ -51,7 +51,15 @@
 	    project.setProperty( attributes.get( "to" ),
 	                         attributes.get( "string" ).toUpperCase() );
 	</scriptdef>
-
+	<target name="deployToNeha"><sf:deploy 
+			username="${sf.username}" 
+			password="${sf.password}" 
+			serverurl="${sf.serverurl}" 
+			maxPoll="${sf.maxPoll}" 
+			deployRoot="${user.dir}/src" 
+			logType="${env.SF_LOGDETAIL}" 
+			checkOnly="${sf.checkOnly}" />
+	</target>
 	<target name="UpdateMetaData">
 		<propertyselector property="src.configs"
 						delimiter=","
