@@ -42,7 +42,7 @@
 		<antcall target="cleanProfilesPermSets" />
 		<antcall target="DeleteMetaData" />
 		<antcall target="UpdateMetaData" />
-		<antcall target="${build.cmd}" />s
+		<antcall target="${build.cmd}" />
 	</target>
 	
 	<scriptdef language="javascript" name="upper">
