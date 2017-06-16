@@ -42,7 +42,7 @@
 		<antcall target="cleanProfilesPermSets" />
 		<antcall target="DeleteMetaData" />
 		<antcall target="UpdateMetaData" />
-		<antcall target="${build.cmd}" />
+		<antcall target="${build.cmd}" />s
 	</target>
 	
 	<scriptdef language="javascript" name="upper">
@@ -57,7 +57,6 @@
 			serverurl="${sf.serverurl}" 
 			maxPoll="${sf.maxPoll}" 
 			deployRoot="${user.dir}/src" 
-			logType="${env.SF_LOGDETAIL}" 
 			checkOnly="${sf.checkOnly}" />
 	</target>
 	<target name="UpdateMetaData">
